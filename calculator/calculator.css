@@ -1,0 +1,120 @@
+/* *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator{
+    flex: 0 0 35%;
+}
+
+.screen{
+    width:83.4%;
+    font-size:4rem;
+    padding:0.5rem;
+    background: rgba(41,41,56);
+    color:white;
+    border:none;
+}
+
+.buttons{
+    display:flex;
+    flex-wrap:wrap;
+    transition: all 0.5s linear;
+    width:400px;
+}
+
+button{
+    flex: 0 0 25%;
+    border:1px solid black;
+    transition:all 2s ease;
+    
+}
+
+
+button:hover{
+    background: blue;
+}
+
+.btn-yellow{
+    background: rgba(245, 146, 6);
+    color: white;
+}
+.btn-grey{
+    background: rgba(224,224,224);
+}
+
+.btn,.btn-equal,.btn-clear{
+    font-size: 3rem;
+}
+
+.btn-clear{
+    background: red;
+}
+.btn-clear:hover{
+    background:red;
+}
+
+.btn-equal{
+    background: green;
+}
+ */
+
+
+
+
+
+
+ *{
+     margin:0px;
+    padding:0px;
+ }
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buttons{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+}
+.btn,.btn-clear{
+    padding:10px;
+}
+.screen{
+    font-size:2rem;
+    padding:0.5rem;
+    background: rgba(41,41,56);
+    color:white;
+    width:300px;
+    height:40px;
+}
+.calculator{
+    border:2px solid black;
+}
+button{
+    font-size:30px;
+    cursor:pointer;
+}
+.btn-yellow{
+    background: orange;
+}
+.btn-equal{
+    background:green;
+    color:white;
+}
+.btn-clear{
+background:red;
+}
+.btn-black{
+    background:black;
+    color:white;
+}
